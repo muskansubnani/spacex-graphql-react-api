@@ -33,9 +33,12 @@ const PastLaunches = () => {
 
     return loading? <Loading/> : (
         <Fragment>
+        <div className="card">
             <h1>Past Launches</h1>
             <LaunchesFeed launches={launches} />
+            </div>
         </Fragment>
+
     );
 };
 

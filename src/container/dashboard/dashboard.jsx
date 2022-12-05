@@ -21,7 +21,7 @@ const Dashboard = ({children}) =>
     console.log(error);
     if (error) return <Error error={error} />;
     return loading? <Loading/> : (  
-        <div class="card">
+        <div className="card">
     <div>   
                 <SideMenu
                     rockets={data.rockets}
@@ -30,7 +30,8 @@ const Dashboard = ({children}) =>
                 
                     <main>{children}</main>
                 </div>
-                </div>     
+                </div> 
+                    
                 </div>
              
       

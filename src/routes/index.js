@@ -8,7 +8,7 @@ import Dashboard from '../container/dashboard';
 const Routing = () => (
     <Router>
     <Dashboard>
-        <div>            
+        <div className='card'>            
             <Routes>
                 <Route exact path="/" element={<Home/>} />
                 <Route exact path="/launches" element={<PastLaunches/>} />

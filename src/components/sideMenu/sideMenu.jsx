@@ -5,7 +5,6 @@ import { Sidebar } from 'primereact/sidebar';
 import { Button } from 'primereact/button';
 import 'primeflex/primeflex.css';
 import 'primeicons/primeicons.css';
-import Logo from '../logo';
 
 
 const SideMenu = (rockets) => {
@@ -14,12 +13,12 @@ const SideMenu = (rockets) => {
 
 return (
     <header>
-    <div  class="flex flex-column flex-wrap justify-content-start">
-        <div class="flex">
-            
-            <Button icon="pi pi-align-justify" onClick={() => setVisibleLeft(true)} className="mr-2" />
+    <div class="flex flex-column flex-wrap justify-content-start">
+    <div class="flex flex-row">
+    <div class="flex align-items-center justify-content-center"><Button icon="pi pi-align-justify" onClick={() => setVisibleLeft(true)} className="mr-2" /></div>
+
+   
         </div>
-        <Logo/>
     </div>
 
 
